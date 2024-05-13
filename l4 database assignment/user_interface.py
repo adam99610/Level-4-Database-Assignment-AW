@@ -20,15 +20,16 @@ def main():
             print("Adding a new booking...")
             first_name = input("Enter Customer's first name: ")
             surname = input("Enter Customer's surname: ")
-            postcode = input("Enter the Custokmer's postcode: ")
+            postcode = input("Enter the Customer's postcode: ")
             phone_number = input("Ener the Customers phone number: ")
             room_id = input("Enter room number: ")
             booking_date = input("Enter a booking date (YYYY-MM-DD): ")
             requests = input("Enter any Special requests: ")
 
-            customer_details = f"{first_name} {surname} {postcode}{phone_number}"
+            customer_id = f"{first_name} {surname} {postcode} {phone_number}"
 
-            new_booking(customer_details, room_id, booking_date, requests)
+            new_booking(customer_id, room_id, booking_date, requests)
+            
         
         elif choice == "2":
             print("Updating a booking...")
